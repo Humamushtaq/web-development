@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskno. 14</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let array=[];
+    console.log(array);
+    let nameArray=['Huma','Abdul Rehman']
+    for(let s=0;s<nameArray.length;s++)
+    {
+        console.log(nameArray[s]);
+    }
+    // console.log(nameArray[1]);
+    // console.log(nameArray[3]);
+    let first=nameArray[0]
+    console.log(first);
+    let last=nameArray[nameArray.length-1]
+    console.log(last);
+    nameArray.push('Eman')
+    for(let s=0;s<nameArray.length;s++)
+    {
+        console.log(nameArray[s]);
+    }
+    nameArray.pop();
+    console.log(nameArray);
+    nameArray.push(4,'Eman')
+    console.log(nameArray);
+    nameArray.splice(2,1,'Imtiaz');
+    console.log(nameArray);
+    if(nameArray.includes('Imtiaz'));
+    {
+        console.log('Imtiaz name found');
+    }
+    // else{
+    //     console.log('not found');
+    // }
+
+    let arr= nameArray.concat('Mushtaq','Zeeshan')
+    console.log(arr);    
+    arr.sort()
+    console.log(arr);
+
+
+    
+    
+
+    // let new=nameArray.shift();
+    // console.log(new);
+
+
+
+</script>
+</html>

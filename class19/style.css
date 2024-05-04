@@ -1,0 +1,151 @@
+.navbar .navbar-nav .nav-item {
+    padding:10px;
+}
+.nav-link{
+    padding-inline:100px;
+}
+.jane img{
+    max-height:10px;
+    max-width:10px;
+}
+.Jane{
+    display:flex;
+    justify-content: space-between;
+    padding:40px;
+
+    margin:0 auto 0 auto;
+    width:100%;
+}
+.jane p{
+    margin-right: 15px;
+}
+.services{
+    margin:0 auto 0 auto;
+    padding: 80px 0px 0px 0px;
+    text-align: center;
+}
+h1{
+    color:black;
+}
+h2{
+    color:black;
+    font-size: 42px;
+}
+hr{
+    width:30;
+}
+.grid-33{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
+    width:80%;
+    margin:0 auto;
+}
+.grid-33 > div
+{
+background-color: #f2f2f2;
+padding:18px;
+text-align: center;
+box-shadow: 0px 0px 10px #000000;
+margin: 80px auto 40px auto;   
+}
+.grid-33 .fa-solid {
+color: #666666;
+font-size: 50px;
+}
+test{
+    height:1000px;
+}
+.aboutme {
+background-color: #dbdbf8;
+height:500px;
+max-width:1280px;
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+.aboutme h1{
+    padding:50px;    
+}
+.container h1{
+    text-align: center;
+    padding:50px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    width:100px;
+    height: 100px;
+}
+.col1{
+    width:280px;
+    float:left;
+    /* height:320px; */
+    margin: 10px;
+    padding:5px;
+    /* text-align: center; */
+    border:4px solid black;
+    border-radius: 4%;
+
+}
+.col2{
+    width:280px;
+    
+    /* height:320px; */
+    margin: 10px;
+    padding:5px;
+    border:4px solid black;
+    border-radius: 4%;
+}
+.col3{
+    width:280px;
+    float:right;
+    /* height:320px; */
+    margin: 10px;
+    padding:5px;
+    border:4px solid black;
+    border-radius: 4%;
+}
+.testimonials{
+    background-color: #dbdbf8;
+    height:500px;
+    max-width:1280px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+.testimonials h1 {
+    padding:80px;
+}
+.contactme{
+    text-align: center;
+    padding:50px;
+    background-color: #666666;
+    /* display: flex */
+}
+.email{
+    /* padding:50px; */
+    float:left;
+}
+.fone{
+    /* padding:50px; */
+    float:right;
+}
+.icons img{
+    height:30px;
+    width:30px;
+}
+.icons{
+    /* padding:50px; */
+    align:center;
+}
+.rights{
+    text-align: center;
+    padding:30px;
+    background-color:#dbdbf8;
+}
