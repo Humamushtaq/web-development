@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 27 </title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Q1
+    function addition(v1,v2){
+        return v1+v2
+    }
+    let add=addition(2,7)
+    // document.write(add)
+    console.log(add);
+    // Q2
+
+    let value=[5,6,23,67,96,12,45,78,54,1]
+    value.sort()
+    value.reverse()
+    let max=value[0]
+    document.write(max)
+    console.log(max);
+
+    // Q3
+    let name="madam"
+    function palindrom(){
+        
+    let m=name.split("").reverse().join("");
+    console.log(m);
+    }
+    palindrom()
+
+    // Q4
+    let str="Huma Mushtaq"
+    function change(){
+        let n=str.split("").reverse().join("");
+        console.log(n);
+
+    }
+    change()
+
+    // Q5
+    // let arr=[2,3,5,6,10,11]
+    // for(let e=0; e < arr.length;e++){
+    //     if(e%2===0){
+    //         console.log(e);
+    //                 }
+    //             }
+    // Q5
+    
+    //   Q6    
+    let number= prompt("Please enter the number to find the factorial")
+    let facto=1
+    function fact(n){
+
+    if (n>number){
+        return;
+    }
+    facto=facto *n
+    n++
+    fact(n)
+    }
+    fact(1)
+    console.log("The factorial of the ",number, "is ", facto);
+
+    // Q7
+    let prime=prompt("Please enter a number to find the prime.")
+    if (prime<=1){
+        console.log(prime,"is not a prime number")
+    }
+     else{
+        for(let p=2; p<prime; p++)
+        {
+            if(prime%p==0)
+            {
+                var result="This is not a prime number"
+                console.log(prime);
+                break;
+            }
+            else
+            {
+                var result="This is a prime number"
+                console.log(prime);
+        
+            }
+        }
+    
+        
+        console.log(result);
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

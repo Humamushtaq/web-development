@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task no 17</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Q1 :Check if an emelment is present in an Array using 
+   //    JavaScript?
+
+   let arr=[1,4,7,32,76,54,24,89,12]
+   let val=76;
+   let result=arr.some(x=> x===val);
+   console.log(result);
+   
+//    Q2
+//   JavaScript program to swap first and last elements 
+//   in an array?
+
+   [arr[0], arr[arr.length-1]] = [arr[arr.length -1] ,arr[0]]
+   console.log(arr);
+//    Q3
+// JavaScript program to delete Middle Element from an array?
+let arr1=[1,2,3,4,5,6,7,8,9]
+let a=arr1.length -1;
+let b=a/2
+console.log(b);
+
+arr1.splice(b,1 );
+console.log(arr1);
+
+// Q4
+// Copy Array items into another array in JavaScript?
+let arr2=[1,3,5,7,9,11,13]
+let copy=arr2.map((value)=>{
+     return value
+    
+})
+console.log(copy);
+
+// Q5
+// Create Array of integers betweentwo numbers inclusive
+// in JavaScript?
+
+let array=[2,8]
+console.log(array);
+array.splice(1,0,4,6,);
+console.log(array);
+
+//  Q6
+let arr3=[3,1,5,2,4]
+arr3.sort()
+arr3.reverse()
+console.log(arr3);
+let arr4=arr3.slice(0,3)
+console.log(arr4);
+
+// let n=arr.length;
+// let h1= -Infinity ,h2= -Infinity,h3= -Infinity;
+// let f=Math.max(arr3)
+// for(let z=0;z<n;z++){
+//     h1 = Math.max(h1, arr3[z])
+
+// }
+
+// for(z=0;z<n;z++){
+// if(arr3[z] < h1){
+//     h2 = Math.max(h2,arr3[z])
+// }
+// }
+// for(z=0;z<n;z++){
+//     if (arr3[z]<h2){
+//         h3=Math.max(h3,arr3[z])
+//     }
+// }
+// console.log(h1,h2);
+// console.log(h1,h2,h3);
+
+// Q7
+// let arr5=[1,2,3,4,7,9,11]
+function isSorted(arr5){
+    for(let x=1 ; x<arr5.length ; x++){
+        if(arr5[x]<arr5[x-1]){
+            console.log("Array is not sorted");
+        }
+    
+        else(arr5[x]>arr5[x-1])
+        {
+        console.log("Sorted");
+        }
+    }
+    }
+
+isSorted([1,2,3,5,4]);
+
+
+// Q8
+// array=['a','b','c','d']
+// indexes=[3,1,0,2]
+// function sort(items,newOrder){
+//     for(j=0;j<newOrder.length;j++){
+//         while(newOrder[j]!==j){
+//             let t=newOrder[j]
+//             [newOrder[j],newOrder[t]] = [newOrder[t],newOrder[j]]
+//             [item[j],item[t]] = [item[t],item[j]]
+
+//         }
+//     }
+
+// }
+
+// sort(['a','b','c','d'], [3,1,0,2])
+
+</script>
+</html> 
