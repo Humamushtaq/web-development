@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class no 38</title>
+</head>
+<body>
+    <h1>Hoisting in JS</h1>
+    <div id="check" onclick="Hello()"></div>
+
+<script>
+    x=4;
+    document.getElementById('check').innerHTML= x
+    var x;
+    console.log(x);
+    Hello()
+    function Hello(){
+        console.log('hello');
+    }
+   Hello()
+//    double()
+   let double= ()=> {
+    console.log('Hello double');
+   }
+   double();
+ 
+//   "Use Strict"
+x=6;
+console.log(x);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class no 36
+
+    </title>
+</head>
+<body>
+    <!-- calculator -->
+    <!-- 1st number -->
+    <input type="number" placeholder="first_number" id="first_no">
+    <!-- 2nd number -->
+    <input type="number" placeholder="second_number" id="second_no"> 
+    <!-- dropdown menu-->
+     <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+     </select>
+     <!-- convertor -->
+      <button onclick="convertor()">Convertor</button>
+      <!-- output input field -->
+       <input type="number" id="outpur" placeholder="output">
+          <!-- <input type="text" oninput="text_change(event)"> -->
+           <input type="text" id="textChange">
+           <h1 id="head"></h1>
+           
+       <script>
+     document.getElementById('textChange').addEventListener('change' , (e)=>{
+     document.getElementById('head').innerHTML=e.target.value
+     })
+        // event on focus change 
+    //  function real_text(e){
+    //     console.log(name.target.value)
+    //     document.getElementById('head').innerHTML=e.target.value
+    //  }
+    
+
+function convertor(){
+let first_no=parseInt(document.getElementById('first_no').value)
+let second_no=parseInt(document.getElementById('second_no').value)
+let operator=document.getElementById('operator').value
+let output=document.getElementById('output')
+let result=0;
+if(operator==='+'){
+result= first_no + second_no
+}
+else if(operator==='-'){
+    result= first_no - second_no
+}
+else if(operator==='*'){
+    result= first_no * second_no
+}
+else{
+    alert('No operator selected')
+}
+ output.value=result
+}
+       </script>
+
+</body>
+</html>

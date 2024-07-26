@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class no 37</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <input type="text" id="first">
+    <input type="text" id="second">
+    <button id='btn'>stop</button>
+    <script>
+        let btn=document.getElementById('btn').addEventListener('click' ,()=>{
+            console.log('You click me');
+        })
+        document.getElementById('first').addEventListener('change' ,(e)=>{
+            console.log(e.target.value);
+        }) 
+        document.getElementById('second').addEventListener('input' ,(event)=>{
+            console.log(event.target.value);
+        }) 
+       
+        let date=new Date()
+        let hours=date.getHours()
+        let min=date.getMinutes()
+        let sec=date.getSeconds()
+       
+        console.log(`${hours}:${min}:${sec}`);
+        // console.log(hours);
+
+    // setTimeout(function(){
+    //     console.log("hello");
+    // },1000)
+
+    let data=setInterval(function(){
+        console.log("hello");
+    },2000)
+    document.getElementById('btn').addEventListener('click' , ()=>{
+        clearInterval(data)
+    })
+    </script>
+
+
+
+</body>
+</html>

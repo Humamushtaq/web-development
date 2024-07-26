@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class no 33</title>
+</head>
+<style>
+    
+</style>
+<body id="colorButton">
+    <h1></h1>
+    <button onclick="previous()" id="btn">Previous</button>
+    <button onclick="next()" id="btn">Next</button>
+    <button onclick="color()">Dark Mode</button>
+    <button onclick="color1()">Light Mode</button>
+
+    <script>
+
+        let no =  document.getElementsByTagName('h1')[0].innerText=1
+         function previous(){
+            no=no-1
+            console.log(no);
+            document.getElementsByTagName('h1')[0].innerText=no
+            
+         }
+         function next(){
+            no=no+1
+            console.log(no);
+            document.getElementsByTagName('h1')[0].innerText=no
+            // document.getElementById('colorButton').style.background="blue"
+         }
+
+         function color(){
+              document.getElementById('colorButton').style.background="black"
+              document.getElementById('colorButton').style.color="white"
+         }
+         
+         function color1(){
+            document.getElementById('colorButton').style.background="white"
+            document.getElementById('colorButton').style.color="black"
+         }
+
+        // document.getElementById('heading').innerText="Hello world"
+        // document.getElementById('heading').innerHTML="Hello world"
+        // let lengthOfHeading= document.getElementsByTagName('h1')[0].innerHTML='No this is on index 0'
+        // let lengthOfHeading= document.getElementsByTagName('h1').length
+        // for(let i=0;i<lengthOfHeading;i++){
+        //     document.getElementsByTagName('h1')[i].style.color='red'
+        //     document.getElementsByTagName('h1')[i].style.background='pink'    
+        //     // document.getElementsByTagName('h1')[i].borderstyle=2px
+        // document.getElementsByTagName('h1')[i].innerText="No this is on index 0"
+        // }
+        // document.getElementsByTagName('h1')[0].innerHTML="Hello"
+        // document.getElementsByTagName('h1')[0].innerHTML="Hello"
+        // document.getElementsByTagName('h1')[0].innerHTML="Hello"
+    </script>
+</body>
+</html>

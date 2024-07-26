@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Light Mode</title>
+</head>
+<body>
+    <button onclick="dark()" id="btn">Dark mode</button> <br>
+    <button onclick="light()" id="btn1">Light Mode</button>
+</body>
+<script>
+function dark(){
+    document.getElementsByTagName('body')[0].style.background='black'
+    document.getElementById('btn').style.backgroundColor='black'
+    document.getElementById('btn').style.color='white'
+}
+function light(){
+    document.getElementsByTagName('body')[0].style.background='white'
+    document.getElementById('btn').style.backgroundColor='black'
+    document.getElementById('btn').style.color='white'
+}
+</script>
+</html>

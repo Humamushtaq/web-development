@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class34 Buttons</title>
+</head>
+<body>
+    <button onmouseover="over()" onmouseout="out()" onclick="click1()" id="btn">Click  </button>
+    <!-- <button onmouseover="out()" id="btn1">Out  </button> -->
+    <script>
+        function over(){
+            // alert("Alert")
+            document.getElementById('btn').style.background='pink'
+            document.getElementById('btn').style.width='100px'
+
+        }
+        function out(){
+            // alert("Alert")
+            document.getElementById('btn').style.background='red'
+            document.getElementById('btn').style.width='50px'
+
+        }
+        let a=1;
+        function click1(){
+            a=a+1;
+            if(a%2==0){
+            document.getElementById('btn').style.background='black'
+            document.getElementById('btn').style.color='white'
+            document.getElementById('btn').innerText="Click Me"
+            
+            
+            }
+          else
+          {
+          document.getElementById('btn').innerHTML="Click";
+          }}
+    // let heading_tag='This is heading'
+    
+    // to show on browser
+    let heading_tag=document.createElement('h1')
+    heading_tag.textContent=('This is heading')
+    console.dir(heading_tag);
+    </script>
+
+</body>
+</html>

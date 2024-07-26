@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task no 18 Objects</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class car { 
+        constructor(make , model , year , color) {
+            this.make=make,
+            this.model=model,
+            this.year=year,
+            this.color=color
+
+        }
+        description(){
+            console.log("This is ",this.make,this.color);
+        }
+    };
+    let first =new car('Honda','Accord', 2020,'White')
+    let second =new car('Honda','Civic', 2019,'Black')
+
+    //     make:'Honda',
+    //     model: 'Accord',
+    //     year:2018,
+    //     color:'Black'
+    // };
+    console.log(first);
+    console.log(first.model);
+    document.write(first.model);
+    console.log(second);
+    first.model='Civic'
+    console.log(first);
+
+    for (const key in first){
+       console.log(key + " " + first[key]);
+     }
+
+    let cars=[
+        {make:'Suzuki',model:'Swift',year:'2021',color:'Red'},
+        {make:'Suzuki',model:'Alto',year:'2020',color:'Silver'},
+        {make:'Suzuki',model:'Cultus',year:'2023',color:'Black'},
+    ];
+
+    console.log(cars);
+
+let person = {
+    name:'Abdul Rehman',
+    surName: 'Imtiaz',
+    address : {
+        street: 13,
+        city : 'Faisalabad',
+    }
+}
+
+console.log(person);
+first.description()
+second.description()
+
+class Person1{
+    constructor(firstName,lastName,age,height){
+    this.firstName = firstName,
+    this.lastName = lastName,
+    this.age = age,
+    this.height = height
+    }
+
+}
+
+let one = new Person1('Abdul Rehman','Imtiaz',14,5.4)
+let two = new Person1('Eman Fatima','Imtiaz',11,5)
+let three = new Person1('Arham','Khalique',6,4.3)
+
+console.log(one);
+console.log(two);
+console.log(three);
+
+</script>
+</html>
