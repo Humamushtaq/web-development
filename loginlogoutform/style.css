@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(87, 233, 112);
+    padding: 10px;
+    align-items: center;
+}
+.right-nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:10px;
+}
+h1{
+    color:rgb(28, 180, 35);
+
+}
+a{
+color:whitesmoke;
+text-decoration: none;
+font-weight: 700;
+}
+#login ,  #logout , .submit-btn {
+    background-color: rgb(56, 202, 43);
+    border:none;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 2px;
+    color:whitesmoke;
+}
+#login:hover ,#logout:hover ,.submit-btn {
+    background-color: green;
+ 
+
+}
+#logout{
+    display:none;
+}
+
+.container{
+    width:50%;
+    margin:0% auto;
+    height:100vh;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 245, 128);
+    align-items: center;
+    padding: 20px;
+    gap:10px;
+    color:smokewhite;
+}
+input{
+    padding: 5px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
