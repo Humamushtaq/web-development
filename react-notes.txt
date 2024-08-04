@@ -1,0 +1,13 @@
+To create a new website 
+1- create a new folder
+    to create a new folder write this command
+		npx create-react-app foldername
+
+
+To open the terminal " shift+`+ctrl"
+
+
+2-To start writing code write in terminal of that folder
+		  start npm
+
+
