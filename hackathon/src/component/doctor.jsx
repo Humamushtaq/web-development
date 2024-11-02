@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {db} from "/firebase";
+import {db} from "../firebase";
 import {collection ,addDoc} from "firebase/firestore";
-import firebase from "firebase";
+
 function Doctor() {
 const [formData,setFormData]=useState({
     name:"",
@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
         slotId: formData.slotId,
       });
       console.log("Document written with ID: ", docRef.id);
-      // Optionally reset the form
+    
       setFormData({
         name: "",
         specialization: "",
